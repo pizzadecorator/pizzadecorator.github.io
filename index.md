@@ -21,13 +21,13 @@ This is a YouTube video to explain the dispensing mechanism of PD.
 
 **Pizza Detection**
 
-PD(Pizza Decorator) uses an Ultrasonic sensor to detect the pizza. Me UltraSonic sensor in MakeBlock kit can detect obstacles from 3 to 400 cm away, within 30 degree angle. The transmitter of the sensor radiates ultrasound in a short interval, and the receiver gets the echo sound striked to the obstacles to measure the distance between the object and itself.  The sensor is installed below the robot (Figure 1.c). When a slice of pizza comes above the sensor, the sensor sends a signal to PD, and the system activates the robot to start tracking the tilt angle of the user’s head.
+PD(Pizza Decorator) uses an Ultrasonic sensor to detect the pizza. Me UltraSonic sensor in MakeBlock kit can detect obstacles from 3 to 400 cm away, within 30 degree angle. The transmitter of the sensor radiates ultrasound in a short interval, and the receiver gets the echo sound striked to the obstacles to measure the distance between the object and itself.  The sensor is installed below the robot. When a slice of pizza comes above the sensor, the sensor sends a signal to PD, and the system activates the robot to start tracking the tilt angle of the user’s head.
 
 **Head Motion Tracking**
 
 ![HAAR_features](./images/haar_features.jpg)
 
-We use Haar classifier in face detection process. Haar algorithm is the object detection method proposed by Paul Viola and Michael Jones [1]. A cascade function is trained from a lot of positive and negative images. From the classifier, the algorithm extracts the features using Haar features in figure 2. Each feature is a value obtained by subtracting sum of pixels of white rectangle from sum of pixels of black rectangle. For face detection, the cascade of classifiers is used. In other words, different classifiers are applied one-by-one. 
+We use Haar classifier in face detection process. Haar algorithm is the object detection method proposed by Paul Viola and Michael Jones [1]. A cascade function is trained from a lot of positive and negative images. From the classifier, the algorithm extracts the features using Haar features in the figure above. Each feature is a value obtained by subtracting sum of pixels of white rectangle from sum of pixels of black rectangle. For face detection, the cascade of classifiers is used. In other words, different classifiers are applied one-by-one. To check Haar in more detail, please refer to <https://docs.opencv.org/3.3.1/d7/d8b/tutorial_py_face_detection.html>.
 
 **Dispensing Hot Sauce**
 
