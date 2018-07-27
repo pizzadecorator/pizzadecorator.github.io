@@ -5,7 +5,7 @@
 layout: home
 ---
 
-![Figure 1](./images/figure1_raw.png)
+![Figure 1](./images/figure1_raw_2.png)
 
 ## Abstract
 Pizza Decorator is a robot that helps people easily put hot sauce and sprinkle powder of parmesan cheese on a slice of pizza even when their hands are greasy and occupied. To interact with this robot without touching it, our team decided to use head tilting interaction through computer vision algorithms. With head tilting, users can select the seasoning and start dispensing. Bringing back the head to an upright position indicates the end of the process.
