@@ -24,7 +24,7 @@ PD(Pizza Decorator) uses an Ultrasonic sensor to detect the pizza. Me UltraSonic
 
 **Head Motion Tracking**
 
-![HAAR_features](./images/haar_features.png)
+![HAAR_features](./images/haar_features.jpg)
 We use Haar classifier in face detection process. Haar algorithm is the object detection method proposed by Paul Viola and Michael Jones [1]. A cascade function is trained from a lot of positive and negative images. From the classifier, the algorithm extracts the features using Haar features in figure 2. Each feature is a value obtained by subtracting sum of pixels of white rectangle from sum of pixels of black rectangle. For face detection, the cascade of classifiers is used. In other words, different classifiers are applied one-by-one. 
 
 **Dispensing Hot Sauce**
